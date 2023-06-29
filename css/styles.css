@@ -717,7 +717,7 @@ section {
 
     .modalContainer .modal-content {
         background-color: #fefefe;
-        margin: 0px 50px 0px 50px;
+        margin: auto;
         padding: 20px;
         border: 1px solid lightgray;
         border-top: 10px solid #5a61bd;
