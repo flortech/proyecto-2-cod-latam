@@ -717,12 +717,13 @@ section {
 
     .modalContainer .modal-content {
         background-color: #fefefe;
-        margin: auto;
+        margin: 0px 50px 0px 50px;
         padding: 20px;
         border: 1px solid lightgray;
         border-top: 10px solid #5a61bd;
         width: 60%;
         text-align: left;
+        overflow: visible;
     }
 
     .modalContainer .close {
