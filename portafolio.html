@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Portafolio</title>
+    <style>
+        /* Estilo para las imágenes */
+        .imagen {
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+
+
+        nav {
+        /*position: fixed;*/
+        top: 0vh;
+        background-color:#5a61bd;
+        min-width: 1024px;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom:0vh;
+        font-family: 'Kalam', sans-serif;
+        font-size: 10px;
+        margin-left: 0vh;
+        left:0vh;
+        right: 0vh;
+        display: flex;
+        /*justify-content: flex-end;*/
+        flex-direction: row;
+        margin-top: 0vh;
+        border-top: 0vh;
+        color: aliceblue;
+     }
+
+    nav ul {
+       /* padding-top:20px;*/
+        padding-bottom: 0px;
+        margin-bottom: 50;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul{
+        margin-bottom: 3px;
+        list-style: none;
+    }
+
+    nav ul li {
+      bottom: 0px;
+      right: 0px;
+      text-align: right;
+      color: aliceblue;
+      list-style: none;
+    }
+
+    nav li li.item{
+        flex-direction: column;
+        border-bottom: 0vh;
+        list-style: none;
+        list-style-type:none;
+    }
+
+    
+
+    </style>
+     <nav>
+        <ul class="menu">
+          <ul aling="right">
+            <li class="item-logo"><img src="img/logo-write-movil.png"></a></li>
+          </ul>
+          </ul>
+      </nav>
+
+
+</head>
+<body>
+    <!-- Botón para mostrar la primera imagen -->
+    <button onclick="mostrarImagen(1)">VER:  APSHOME</button>
+    <button onclick="mostrarImagen(2)">VER:  CriptoAleman</button>
+    <button onclick="mostrarImagen(3)">VER:  Mi Aliada Flor</button>
+    <button onclick="mostrarImagen(4)">VER:  Sofimedical</button>
+    
+    <a href="index.html">VOLVER</a>
+    <!-- Imágenes ocultas -->
+    <img class="imagen" id="imagen1" src="img/APS.png" alt="Imagen 1">
+    <br>
+    <img class="imagen" id="imagen2" src="img/criptoaleman.png" alt="Imagen 2">
+    <br>
+    <img class="imagen" id="imagen3" src="img/flor.png" alt="Imagen 3">
+    <br>
+    <img class="imagen" id="imagen4" src="img/sofimedical.png" alt="Imagen 4">
+    <script>
+        // Función para mostrar una imagen al hacer clic en el botón
+        function mostrarImagen(numero) {
+            // Ocultar todas las imágenes
+            document.querySelectorAll('.imagen').forEach(img => img.style.display = 'none');
+            // Mostrar la imagen seleccionada
+            document.getElementById('imagen' + numero).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
